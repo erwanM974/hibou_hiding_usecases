@@ -124,10 +124,20 @@ For each interaction, the legend specifies the number of points of each kind.
 
 
 
-|                | [Book oder](https://link.springer.com/chapter/10.1007/978-3-319-94580-4_5)      | [Sensor](https://josis.org/index.php/josis/article/view/38)                 | [ABP](https://satoss.uni.lu/members/sjouke/papers/MaRe97.pdf)         | [Network](https://programming-journal.org/2019/3/6/)                          |
-|----------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| Plot           | <img src="./README_images/plots/book_order_rw.png" alt="coping" width="400">    | <img src="./README_images/plots/sensor_rw.png" alt="sensor" width="400">    | <img src="./README_images/plots/abp_rw.png" alt="abp" width="400">    | <img src="./README_images/plots/network_rw.png" alt="network" width="400">    |
-| Statistics     | <img src="./README_images/stats/book_order_stats.png" alt="coping" width="350"> | <img src="./README_images/stats/sensor_stats.png" alt="sensor" width="350"> | <img src="./README_images/stats/abo_stats.png" alt="abp" width="350"> | <img src="./README_images/stats/network_stats.png" alt="network" width="350"> |
+|            | [Book oder](https://link.springer.com/chapter/10.1007/978-3-319-94580-4_5)      | [Sensor](https://josis.org/index.php/josis/article/view/38)                 |
+|------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| Plot       | <img src="./README_images/plots/book_order_rw.png" alt="coping" width="400">    | <img src="./README_images/plots/sensor_rw.png" alt="sensor" width="400">    |
+| Statistics | <img src="./README_images/stats/book_order_stats.png" alt="coping" width="350"> | <img src="./README_images/stats/sensor_stats.png" alt="sensor" width="350"> |
+
+
+|            | [ABP](https://satoss.uni.lu/members/sjouke/papers/MaRe97.pdf)         | [Network](https://programming-journal.org/2019/3/6/)                          |
+|------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| Plot       | <img src="./README_images/plots/abp_rw.png" alt="abp" width="400">    | <img src="./README_images/plots/network_rw.png" alt="network" width="400">    |
+| Statistics | <img src="./README_images/stats/abp_stats.png" alt="abp" width="350"> | <img src="./README_images/stats/network_stats.png" alt="network" width="350"> |
+
+
+
+
 
 
 
