@@ -1,0 +1,6 @@
+@message{
+    buy;reserve;checkAvail;take2shop;availNow;order;avail2Days
+}
+@lifeline{
+    alice;barbara;carol;dave;emily;frank
+}

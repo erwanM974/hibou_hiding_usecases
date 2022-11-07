@@ -1,0 +1,6 @@
+@message{
+    ce;cmi;rlsoc;lsoc;rbm;bm;rcm;cm;tdc;tmu;ucm;err
+}
+@lifeline{
+    CSI;CI;SM;LSM;CSM;CR;CA;SOS
+}

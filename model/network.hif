@@ -1,0 +1,17 @@
+loopS(
+    seq(
+        Client -- <synch>data -> Proxy,
+		alt(
+			seq(
+				Proxy -- <synch>logs -> Log,
+				Proxy -- <synch>data -> EServer
+			),
+			seq(
+				Proxy -- <synch>suspicious -> Log,
+				Log -- <synch>logs -> SupServer
+			),
+			Proxy -- <synch>quotawarn -> Log
+		),
+		Log -- <synch>quota -> Client
+    )
+)

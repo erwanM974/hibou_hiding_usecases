@@ -1,0 +1,60 @@
+loopS(
+seq(
+    d -> S,
+    loopS(
+        seq(
+            S -- <synch>d_zero -> K,
+            K -- <synch>ce -> R,
+            R -- <synch>one -> L,
+            alt(
+                L -- <synch>one -> S,
+                L -- <synch>ce -> S
+            )
+         )
+     ),
+     S -- <synch>d_zero -> K,
+     K -- <synch>d_zero -> R,
+     R -- d ->|,
+     loopS(
+         seq(
+            R -- <synch>zero -> L,
+            R -- <synch>ce -> S,
+            S -- <synch>d_zero -> K,
+            alt(
+                K -- <synch>d_zero -> R,
+                K -- <synch>ce -> R
+            )
+         )
+    ),
+    R -- <synch>zero -> L,
+    L -- <synch>zero -> S,
+    d -> S,
+    loopS(
+        seq(
+            S -- <synch>d_one -> K,
+            K -- <synch>ce -> R,
+            R -- <synch>zero -> L,
+            alt(
+                L -- <synch>zero -> S,
+                L -- <synch>ce -> S
+            )
+         )
+     ),
+     S -- <synch>d_one -> K,
+     K -- <synch>d_one -> R,
+     R -- d ->|,
+     loopS(
+         seq(
+            R -- <synch>one -> L,
+            R -- <synch>ce -> S,
+            S -- <synch>d_one -> K,
+            alt(
+                K -- <synch>d_one -> R,
+                K -- <synch>ce -> R
+            )
+         )
+    ),
+    R -- <synch>one -> L,
+    L -- <synch>one -> S
+)
+)

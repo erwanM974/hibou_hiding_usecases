@@ -1,0 +1,7 @@
+@explore_option{
+    loggers = [tracegen[terminal,
+                        partition=discrete]];
+    strategy = HCS;
+    priorities = random;
+    filters = [ max_loop_depth = 50, max_node_number = 10000 ]
+}

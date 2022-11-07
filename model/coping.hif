@@ -1,0 +1,17 @@
+loopP(
+	seq(
+		alice -- <synch>buy -> barbara,
+		barbara -- <synch>reserve -> carol,
+		carol -- <synch>checkAvail -> dave,
+		alt(
+			seq(
+				dave -- <synch>take2shop -> emily,
+				emily -- <synch>availNow -> barbara
+			),
+			seq(
+				dave -- <synch>order -> frank,
+				frank -- <synch>avail2Days -> barbara
+			)
+		)
+	)
+)

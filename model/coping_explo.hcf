@@ -1,0 +1,6 @@
+@explore_option{
+    loggers = [tracegen[terminal,
+                        partition=discrete]];
+    strategy = DFS;
+    filters = [ max_loop_depth = 2 ]
+}

@@ -1,0 +1,27 @@
+loopS(
+    seq(
+        CSI -- <synch>ce    -> CI,
+        CI  -- <synch>cmi   -> SM,
+        SM  -- <synch>rlsoc -> SOS,
+        SOS -- <synch>lsoc  -> SM,
+        par(
+            seq(
+                SM  -- <synch>rbm   -> LSM,
+                LSM -- <synch>bm    -> SM
+            ),
+            seq(
+                SM  -- <synch>rcm   -> CSM,
+                CSM -- <synch>cm    -> SM
+            )
+        ),
+        SM  -- <synch>cm    -> CSI,
+        loopS(
+            seq(
+                CA  -- <synch>tdc   -> CR,
+                CR  -- <synch>tmu   -> CSM,
+                CSM -- <synch>ucm   -> SM,
+                SM  -- <synch>ucm   -> CSI
+            )
+       )
+    )
+)
